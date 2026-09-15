@@ -56,17 +56,6 @@
     if (pending) pending.hidden = true;
   }
 
-  /* ---- WhatsApp links — hidden until a number is configured ---- */
-  if (CFG.whatsappNumber) {
-    Array.prototype.forEach.call(document.querySelectorAll('[data-whatsapp]'), function (el) {
-      el.setAttribute('href', 'https://wa.me/' + CFG.whatsappNumber);
-      el.setAttribute('rel', 'noopener');
-    });
-    Array.prototype.forEach.call(document.querySelectorAll('[data-whatsapp-row]'), function (el) {
-      el.hidden = false;
-    });
-  }
-
   /* ---- Contact form ---- */
   var form = document.getElementById('contact-form');
   if (!form) return;

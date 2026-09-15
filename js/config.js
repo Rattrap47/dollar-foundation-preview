@@ -17,9 +17,5 @@ window.DF_CONFIG = {
   // Leave empty and the Donate buttons stay pointed at the "How to give" section.
   donateUrl: '',
 
-  // WhatsApp number in international format, digits only (e.g. '233246030338').
-  // Only set this once the foundation confirms the number is on WhatsApp.
-  whatsappNumber: '',
-
   facebookUrl: 'https://www.facebook.com/dollarfoundation1'
 };
